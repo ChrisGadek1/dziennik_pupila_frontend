@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Image, SafeAreaView, ScrollView, Text, TextInput, TouchableHighlight, View} from "react-native";
+import {Button, Image, SafeAreaView, ScrollView, Text, TextInput, TouchableHighlight, View} from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const Login = () =>{
@@ -38,6 +38,11 @@ const Login = () =>{
                             <Icon  name={iconName} size={30} color="gray" />
                         </TouchableHighlight>
                     </View>
+                    <View style={styles.loginButtonContainer}>
+                        <Button title={"Zaloguj"}>
+                        </Button>
+                    </View>
+
                 </View>
             </ScrollView>
 
@@ -84,6 +89,13 @@ const styles = {
     imageContainer: {
         display: "flex",
         alignItems: "center"
-    }
+    },
+
+    loginButtonContainer: {
+        marginTop: "7%",
+        width: "50%",
+        borderRadius: 15,
+        overflow: "hidden",
+    },
 }
 export default Login
