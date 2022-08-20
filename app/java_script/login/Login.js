@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Image, SafeAreaView, ScrollView, Text, TextInput, TouchableHighlight, View} from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons';
+import ImageButton from "../image_button/ImageButton";
 
 const Login = () =>{
     const [showPassword, setShowPassword] = useState(false)
@@ -45,7 +46,11 @@ const Login = () =>{
                     <Text style={styles.registerText}>
                         Nie masz konta? Zarejestruj sie tutaj
                     </Text>
-
+                </View>
+                <View style={styles.socialMediaIconsContainer}>
+                    <ImageButton imgPath={require("../../images/google_icon.png")}/>
+                    <ImageButton imgPath={require("../../images/facebook_icon.png")}/>
+                    <ImageButton imgPath={require("../../images/instagram_icon.png")}/>
                 </View>
             </ScrollView>
 
@@ -103,6 +108,9 @@ const styles = {
     registerText: {
         color: "gray",
         marginTop: "7%",
+    },
+    socialMediaIconsContainer: {
+
     }
 }
 export default Login
