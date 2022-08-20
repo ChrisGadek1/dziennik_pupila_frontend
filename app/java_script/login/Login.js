@@ -42,6 +42,9 @@ const Login = () =>{
                         <Button title={"Zaloguj"}>
                         </Button>
                     </View>
+                    <Text style={styles.registerText}>
+                        Nie masz konta? Zarejestruj sie tutaj
+                    </Text>
 
                 </View>
             </ScrollView>
@@ -97,5 +100,9 @@ const styles = {
         borderRadius: 15,
         overflow: "hidden",
     },
+    registerText: {
+        color: "gray",
+        marginTop: "7%",
+    }
 }
 export default Login
