@@ -110,6 +110,9 @@ const styles = {
         marginTop: "7%",
     },
     socialMediaIconsContainer: {
+        flex: 1,
+        flexDirection: "row",
+        marginTop: "10%",
 
     }
 }
